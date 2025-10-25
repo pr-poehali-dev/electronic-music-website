@@ -100,24 +100,28 @@ export default function Index() {
           
           <div className="grid md:grid-cols-3 gap-6 mt-16">
             {[
-              { icon: 'Spotify', name: 'Spotify', link: '#' },
+              { icon: 'Spotify', name: 'Spotify', link: 'https://open.spotify.com/artist/35FipG066segTX732MA9r5' },
               { icon: 'Music2', name: 'Apple Music', link: '#' },
               { icon: 'Youtube', name: 'YouTube', link: '#' },
             ].map((platform) => (
-              <Card
+              <a
                 key={platform.name}
-                className="p-6 bg-card border-border hover:border-primary/50 transition-all cursor-pointer group"
+                href={platform.link}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <Icon name={platform.icon as any} size={24} className="text-primary" />
+                <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all cursor-pointer group">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <Icon name={platform.icon as any} size={24} className="text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-medium">{platform.name}</p>
+                      <p className="text-sm text-muted-foreground">Listen on platform</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium">{platform.name}</p>
-                    <p className="text-sm text-muted-foreground">Listen on platform</p>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
