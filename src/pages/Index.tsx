@@ -31,7 +31,16 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground relative">
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute top-10 left-10 w-2 h-2 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '0s', animationDuration: '3s' }}></div>
+        <div className="absolute top-40 right-20 w-1 h-1 bg-primary/30 rounded-full animate-pulse" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
+        <div className="absolute bottom-32 left-32 w-1.5 h-1.5 bg-accent/20 rounded-full animate-pulse" style={{ animationDelay: '2s', animationDuration: '5s' }}></div>
+        <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-primary/25 rounded-full animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '3.5s' }}></div>
+        <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-accent/15 rounded-full animate-pulse" style={{ animationDelay: '0.5s', animationDuration: '4.5s' }}></div>
+        <div className="absolute top-2/3 left-1/4 w-1 h-1 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '2.5s', animationDuration: '3s' }}></div>
+      </div>
+      <div className="relative z-10">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -241,6 +250,7 @@ export default function Index() {
           </form>
         </DialogContent>
       </Dialog>
+      </div>
     </div>
   );
 }
