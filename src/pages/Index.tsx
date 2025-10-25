@@ -69,8 +69,12 @@ export default function Index() {
           <h2 className="text-5xl font-bold mb-12 text-center">Биография</h2>
           <Card className="p-8 md:p-12 bg-card border-border">
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                <Icon name="User" size={120} className="text-primary/40" />
+              <div className="aspect-square rounded-lg overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/7ac2c36f-fc31-4823-abe7-0c6e6fe7358d.jpg" 
+                  alt="Alexander Menco"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
