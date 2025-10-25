@@ -98,7 +98,7 @@ export default function Index() {
 
       <section id="music" className="min-h-screen flex items-center justify-center px-6 py-20">
         <div className="container mx-auto max-w-6xl fade-in">
-          <h2 className="text-5xl font-bold mb-12 text-center">Музыка</h2>
+          <h2 className="text-5xl font-bold mb-12 text-center">Playlist</h2>
           <AudioPlayer tracks={tracks} />
           
           <div className="grid md:grid-cols-3 gap-6 mt-16">
