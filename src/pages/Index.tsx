@@ -77,9 +77,8 @@ export default function Index() {
                 />
               </div>
               <div className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  Современный электронный музыкант, создающий атмосферные композиции на стыке ambient, techno и experimental.
-                </p>
+                <p className="text-muted-foreground leading-relaxed">A modern electronic musician who creates atmospheric compositions in the style of afro house, techno, and melodic techno.
+</p>
                 <p className="text-muted-foreground leading-relaxed">
                   Путь в музыке начался с экспериментов с синтезаторами и драм-машинами. Сегодня мои треки звучат на площадках по всему миру.
                 </p>
