@@ -62,10 +62,7 @@ export default function Index() {
             onClick={() => scrollToSection('music')}
             size="lg"
             className="rounded-full px-8 py-6 text-lg"
-          >
-            Слушать треки
-            <Icon name="ChevronRight" size={20} className="ml-2" />
-          </Button>
+          >PLAY ME</Button>
         </div>
       </section>
 
