@@ -3,9 +3,20 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import AudioPlayer from '@/components/AudioPlayer';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState('home');
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const tracks = [
     { id: 1, title: 'Alxandr Menco & Seven - Back It Up', duration: '3:45', url: 'https://drive.google.com/uc?export=download&id=1FjRcrL788P0BxsajutCnDQWza_p0xWCQ' },
@@ -162,7 +173,7 @@ export default function Index() {
                 <Button 
                   className="w-full rounded-full" 
                   size="lg"
-                  onClick={() => window.location.href = 'mailto:alxandrmenco@gmail.com'}
+                  onClick={() => setIsDialogOpen(true)}
                 >
                   <Icon name="Mail" size={20} className="mr-2" />
                   Send email
@@ -178,6 +189,58 @@ export default function Index() {
           <p>© 2024 ALXANDR MENCO. All rights reserved.</p>
         </div>
       </footer>
+
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>Send me a message</DialogTitle>
+            <DialogDescription>
+              Fill out the form below and I'll get back to you soon.
+            </DialogDescription>
+          </DialogHeader>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const subject = encodeURIComponent(`Message from ${formData.name}`);
+              const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+              window.location.href = `mailto:alxandrmenco@gmail.com?subject=${subject}&body=${body}`;
+              setIsDialogOpen(false);
+              setFormData({ name: '', email: '', message: '' });
+            }}
+            className="space-y-4 mt-4"
+          >
+            <div>
+              <Input
+                placeholder="Your name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                required
+              />
+            </div>
+            <div>
+              <Input
+                type="email"
+                placeholder="Your email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                required
+              />
+            </div>
+            <div>
+              <Textarea
+                placeholder="Your message"
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                rows={5}
+                required
+              />
+            </div>
+            <Button type="submit" className="w-full">
+              Send message
+            </Button>
+          </form>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
