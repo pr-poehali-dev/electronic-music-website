@@ -132,7 +132,7 @@ export default function Index() {
                 <h3 className="text-2xl font-semibold mb-6">Свяжитесь со мной</h3>
                 <div className="space-y-4">
                   {[
-                    { icon: 'Mail', label: 'Email', value: 'synth@music.com' },
+                    { icon: 'Mail', label: 'Email', value: 'alxandrmenco@gmail.com' },
                     { icon: 'Instagram', label: 'Instagram', value: '@synth_music' },
                     { icon: 'Send', label: 'Telegram', value: '@synthmusic' },
                   ].map((contact) => (
