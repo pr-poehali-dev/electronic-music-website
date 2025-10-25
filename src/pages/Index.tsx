@@ -84,7 +84,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Users" size={20} className="text-primary" />
-                    <span className="text-sm">50K+ слушателей</span>
+                    <span className="text-sm"></span>
                   </div>
                 </div>
               </div>
