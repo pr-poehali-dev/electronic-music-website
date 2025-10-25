@@ -36,9 +36,9 @@ export default function Index() {
                       : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
-                  {section === 'home' ? 'Главная' : 
-                   section === 'bio' ? 'Биография' :
-                   section === 'music' ? 'Музыка' : 'Контакты'}
+                  {section === 'home' ? 'Home' : 
+                   section === 'bio' ? 'Bio' :
+                   section === 'music' ? 'Music' : 'Contact'}
                 </button>
               ))}
             </div>
@@ -63,7 +63,7 @@ export default function Index() {
 
       <section id="bio" className="min-h-screen flex items-center justify-center px-6 py-20">
         <div className="container mx-auto max-w-4xl fade-in">
-          <h2 className="text-5xl font-bold mb-12 text-center">Биография</h2>
+          <h2 className="text-5xl font-bold mb-12 text-center">Biography</h2>
           <Card className="p-8 md:p-12 bg-card border-border">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="aspect-square rounded-lg overflow-hidden">
@@ -114,7 +114,7 @@ export default function Index() {
                   </div>
                   <div>
                     <p className="font-medium">{platform.name}</p>
-                    <p className="text-sm text-muted-foreground">Слушать на платформе</p>
+                    <p className="text-sm text-muted-foreground">Listen on platform</p>
                   </div>
                 </div>
               </Card>
@@ -125,11 +125,11 @@ export default function Index() {
 
       <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-20">
         <div className="container mx-auto max-w-4xl fade-in">
-          <h2 className="text-5xl font-bold mb-12 text-center">Контакты</h2>
+          <h2 className="text-5xl font-bold mb-12 text-center">Contact</h2>
           <Card className="p-8 md:p-12 bg-card border-border">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
-                <h3 className="text-2xl font-semibold mb-6">Свяжитесь со мной</h3>
+                <h3 className="text-2xl font-semibold mb-6">Get in touch</h3>
                 <div className="space-y-4">
                   {[
                     { icon: 'Mail', label: 'Email', value: 'alxandrmenco@gmail.com' },
@@ -150,14 +150,14 @@ export default function Index() {
               </div>
               
               <div className="space-y-6">
-                <h3 className="text-2xl font-semibold mb-6">Для сотрудничества</h3>
+                <h3 className="text-2xl font-semibold mb-6">Collaboration</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Открыт для коллаборации с другими артистами, продюсерами и лейблами. 
-                  Также доступен для саундтреков и музыки для визуальных проектов.
+                  Open for collaboration with other artists, producers and labels. 
+                  Also available for soundtracks and music for visual projects.
                 </p>
                 <Button className="w-full rounded-full" size="lg">
                   <Icon name="Mail" size={20} className="mr-2" />
-                  Написать письмо
+                  Send email
                 </Button>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function Index() {
 
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-6 text-center text-sm text-muted-foreground">
-          <p>© 2024 SYNTH. Все права защищены.</p>
+          <p>© 2024 ALXANDR MENCO. All rights reserved.</p>
         </div>
       </footer>
     </div>
