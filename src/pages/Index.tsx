@@ -54,9 +54,7 @@ export default function Index() {
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-8">
             <Icon name="Music" size={40} className="text-primary" />
           </div>
-          <h2 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-            SYNTH
-          </h2>
+          <h2 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">ALXANDR MENCO</h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Электронная музыка для души
           </p>
