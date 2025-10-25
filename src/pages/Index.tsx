@@ -80,7 +80,7 @@ export default function Index() {
                 <div className="flex gap-4 pt-4">
                   <div className="flex items-center gap-2">
                     <Icon name="Disc3" size={20} className="text-primary" />
-                    <span className="text-sm">4 альбома</span>
+                    <span className="text-sm"></span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Users" size={20} className="text-primary" />
