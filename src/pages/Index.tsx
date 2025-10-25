@@ -159,7 +159,11 @@ export default function Index() {
                   Open for collaboration with other artists, producers and labels. 
                   Also available for soundtracks and music for visual projects.
                 </p>
-                <Button className="w-full rounded-full" size="lg">
+                <Button 
+                  className="w-full rounded-full" 
+                  size="lg"
+                  onClick={() => window.location.href = 'mailto:alxandrmenco@gmail.com'}
+                >
                   <Icon name="Mail" size={20} className="mr-2" />
                   Send email
                 </Button>
