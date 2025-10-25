@@ -79,9 +79,7 @@ export default function Index() {
               <div className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">A modern electronic musician who creates atmospheric compositions in the style of afro house, techno, and melodic techno.
 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Путь в музыке начался с экспериментов с синтезаторами и драм-машинами. Сегодня мои треки звучат на площадках по всему миру.
-                </p>
+                <p className="text-muted-foreground leading-relaxed">My journey in music began at an early age, and I graduated from music school. During my student years, I performed as a DJ. Currently, I am actively involved in writing electronic music, and my tracks are played at venues worldwide.</p>
                 <div className="flex gap-4 pt-4">
                   <div className="flex items-center gap-2">
                     <Icon name="Disc3" size={20} className="text-primary" />
