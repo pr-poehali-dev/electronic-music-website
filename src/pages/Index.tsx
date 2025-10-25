@@ -102,7 +102,7 @@ export default function Index() {
             {[
               { icon: 'Spotify', name: 'Spotify', link: 'https://open.spotify.com/artist/35FipG066segTX732MA9r5' },
               { icon: 'Music2', name: 'Yandex Music', link: 'https://music.yandex.ru/artist/24925501' },
-              { icon: 'Youtube', name: 'YouTube', link: '#' },
+              { icon: 'Youtube', name: 'YouTube', link: 'https://www.youtube.com/@alxandrmenco' },
             ].map((platform) => (
               <a
                 key={platform.name}
