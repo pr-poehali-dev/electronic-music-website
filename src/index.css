@@ -57,34 +57,59 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(10, 10, 10, 0.95) 0%,
+        rgba(10, 10, 10, 0.7) 50%,
+        rgba(10, 10, 10, 0.95) 100%
+      ),
+      url("https://cdn.poehali.dev/projects/8b9416f9-a284-4339-a1ab-eb54f8d1a4c1/files/49d6c344-39a5-4de6-aaf3-ba49f0c79772.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+    animation: backgroundPulse 20s ease-in-out infinite;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background:
       radial-gradient(
         circle at 20% 50%,
-        rgba(99, 102, 241, 0.03) 0%,
+        rgba(99, 102, 241, 0.08) 0%,
         transparent 50%
       ),
       radial-gradient(
         circle at 80% 80%,
-        rgba(99, 102, 241, 0.04) 0%,
+        rgba(99, 102, 241, 0.06) 0%,
         transparent 50%
       ),
       radial-gradient(
         circle at 40% 20%,
-        rgba(139, 92, 246, 0.02) 0%,
+        rgba(139, 92, 246, 0.05) 0%,
         transparent 40%
       );
     pointer-events: none;
-    z-index: 0;
-    animation: backgroundPulse 15s ease-in-out infinite;
+    z-index: 1;
   }
 
   @keyframes backgroundPulse {
     0%,
     100% {
-      opacity: 1;
+      opacity: 0.15;
+      transform: scale(1);
     }
     50% {
-      opacity: 0.7;
+      opacity: 0.08;
+      transform: scale(1.05);
     }
   }
 
