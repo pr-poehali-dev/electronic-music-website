@@ -101,7 +101,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-6 mt-16">
             {[
               { icon: 'Spotify', name: 'Spotify', link: 'https://open.spotify.com/artist/35FipG066segTX732MA9r5' },
-              { icon: 'Music2', name: 'Yandex Music', link: '#' },
+              { icon: 'Music2', name: 'Yandex Music', link: 'https://music.yandex.ru/artist/24925501' },
               { icon: 'Youtube', name: 'YouTube', link: '#' },
             ].map((platform) => (
               <a
