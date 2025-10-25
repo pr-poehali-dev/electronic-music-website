@@ -133,7 +133,7 @@ export default function Index() {
                 <div className="space-y-4">
                   {[
                     { icon: 'Mail', label: 'Email', value: 'alxandrmenco@gmail.com' },
-                    { icon: 'Instagram', label: 'Instagram', value: '@synth_music' },
+                    { icon: 'Instagram', label: 'Instagram', value: '@alxandr.menco' },
                     { icon: 'Send', label: 'Telegram', value: '@synthmusic' },
                   ].map((contact) => (
                     <div key={contact.label} className="flex items-center gap-4">
