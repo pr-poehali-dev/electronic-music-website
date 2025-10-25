@@ -55,9 +55,7 @@ export default function Index() {
             <Icon name="Music" size={40} className="text-primary" />
           </div>
           <h2 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">ALXANDR MENCO</h2>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Электронная музыка для души
-          </p>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">Electronic music for everyone</p>
           <Button
             onClick={() => scrollToSection('music')}
             size="lg"
