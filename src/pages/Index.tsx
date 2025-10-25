@@ -8,10 +8,7 @@ export default function Index() {
   const [activeSection, setActiveSection] = useState('home');
 
   const tracks = [
-    { id: 1, title: 'Midnight Pulse', duration: '4:32', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-    { id: 2, title: 'Digital Dreams', duration: '3:45', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-    { id: 3, title: 'Neon Horizons', duration: '5:18', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
-    { id: 4, title: 'Echo Chamber', duration: '4:02', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+    { id: 1, title: 'Alxandr Menco & Seven - Back It Up', duration: '3:45', url: 'https://drive.google.com/uc?export=download&id=1FjRcrL788P0BxsajutCnDQWza_p0xWCQ' },
   ];
 
   const scrollToSection = (sectionId: string) => {
